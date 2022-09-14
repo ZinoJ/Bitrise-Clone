@@ -1,0 +1,39 @@
+.pricingDrop {
+   padding: 1rem;
+   position: absolute;
+   top: 4rem;
+   margin-left: -1rem;
+   background-color: white;
+   color: #643789;
+}
+
+.pricingDrop__content {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   margin-bottom: 0.5rem;
+}
+
+.pricingDrop__content > .icon {
+   font-size: 1.2rem;
+}
+
+.pricingDrop__content > .right > h6 {
+   color: #555;
+   margin-top: -6px;
+}
+
+.pricingDrop__content > .right > h3 {
+   font-size: 1rem;
+}
+
+@media screen and (max-width:995px) {
+   .pricingDrop {
+      background-color: #643789;
+      color: white;
+   }
+   .pricingDrop__content > .right > h6 {
+      color: whitesmoke;
+   }
+   
+}

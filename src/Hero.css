@@ -1,0 +1,102 @@
+.hero {
+  
+  background: linear-gradient(to right, #68358a, #422656);
+  display: flex;
+  align-items: center;
+  padding: 6rem 6%;
+  color: white;
+  margin-top: 4rem;
+   padding-top: 10vw;
+   gap: 6rem;
+   /* width: 100%; */
+}
+
+.hero__right > img {
+  max-width: 500px;
+  width: 100%;
+}
+
+.hero__left {
+  /* flex: 0.7; */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* width: 70%; */
+}
+
+
+.hero__left > h1 {
+  font-size: 3rem;
+  line-height: 3.8rem;
+}
+
+.hero__left > p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.hero__buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+  gap: 1rem;
+}
+
+.hero__buttons > button {
+  padding: 1rem 0;
+  flex: 0.5;
+  font-size: 1.2rem;
+  background-color: #259890;
+  border: none;
+  color: whitesmoke;
+  border-radius: 8px;
+  
+}
+
+.hero__buttons > .btn {
+  background: linear-gradient(to right, #4b2e60, #68358a);
+  /* margin-left: 1rem; */
+}
+
+@media screen and (max-width:995px) {
+  .hero {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  
+}
+
+@media screen and (max-width:880px) {
+  .hero__buttons {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .hero__right {
+    display: none;
+  }
+
+  .hero__left > h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .hero__left > h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .hero__left > p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .hero {
+    padding-bottom: 3rem;
+  }
+  
+}

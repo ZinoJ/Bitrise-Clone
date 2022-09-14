@@ -1,0 +1,92 @@
+.footer {
+   position: relative;
+   padding: 5rem 4%;
+   background-color: #351D48;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   padding-top: 7rem;
+}
+
+
+.footer__columns {
+   color: whitesmoke;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+}
+
+
+.footer__column > p {
+   font-size: 0.750rem;
+   margin-bottom: 8px;
+}
+
+.footer__column > p > button {
+   color: #111;
+   background-color: #FFC500;
+   border: none;
+   padding: 4px;
+   margin-left: 6px;
+   border-radius: 4px;
+   font-size: 0.7rem;
+   font-weight: bolder;
+}
+
+.footer__last {
+   display: flex;
+   align-items: center;
+   color: whitesmoke;
+   justify-content: space-between;
+}
+
+.footer__last__right > img {
+   width: 25px;
+   margin-left: 0.8rem;
+}
+
+.last {
+   color: whitesmoke;
+   text-align: center;
+   font-weight: 600;
+}
+
+.last > img {
+   margin-top: 10px;
+}
+
+.cat {
+   position: absolute;
+   height: 140px;
+   width: 140px;
+   top: -5rem;
+   pointer-events: none;
+}
+
+ 
+ @media (prefers-reduced-motion: no-preference) {
+   .cat {
+     animation: App-logo-float infinite 3s ease-in-out;
+   }
+ }
+ 
+ @keyframes App-logo-float {
+   0% {
+     transform: translateY(0);
+   }
+   50% {
+     transform: translateY(50px);
+   }
+   100% {
+     transform: translateY(0px);
+   }
+ }
+
+ @media screen and (max-width:860px) {
+   .footer__columns {
+      grid-template-columns: 1fr 1fr;
+   }
+
+   .footer__column {
+      margin-bottom: 1.8rem;
+   }
+ }

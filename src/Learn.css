@@ -1,0 +1,32 @@
+.learn__container {
+   display: flex;
+   gap: 1.5rem;
+   padding-inline: 2%;
+}
+
+.learn__container > .left {
+   flex: 0.5;
+   display: flex;
+   flex-direction: column;
+   gap: 0.4rem;
+}
+
+.learn__image{
+ max-width: 450px;
+ width: 100%;
+   
+
+   border-radius: 8px;
+   margin-bottom: 14px;
+}
+
+.learn__container > .right {
+   flex: 0.5;
+}
+
+@media screen and (max-width:550px) {
+   .learn__container {
+      flex-direction: column;
+      gap: 0.8rem;
+   }
+}

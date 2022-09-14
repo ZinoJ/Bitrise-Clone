@@ -1,0 +1,145 @@
+.header {
+  background-color: #341c48;
+  padding: 0 6%;
+  padding-right: 5%;
+  width: 100vw;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+}
+
+.header__container {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header__logo {
+  display: flex;
+}
+.header__logo > img {
+  height: 35px;
+  margin-top: -6px;
+}
+.header__navigations {
+  display: flex;
+}
+.header__navs, .demo {
+  display: flex;
+  align-items: center;
+  padding: 1.3rem 1rem;
+  padding-right: 0.2rem;
+  
+}
+
+.header__navs:hover {
+  background-color: white;
+  color: #341c48;
+}
+
+.header__navs > h2, .demo > h2 {
+  white-space: nowrap;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.icons {
+  font-size: 28px;
+  margin-left: -2px;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* font-size: 0.8rem; */
+}
+
+.header__right > h2 {
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+.header__right > button {
+  padding: 12px 1rem;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 4px;
+  color: #341c48;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.demo > button {
+  padding: 3px 6px;
+  border-radius: 4px;
+  border: none;
+  margin-left: 10px;
+}
+
+.hamburger {
+  display: none;
+ }
+
+@media screen and (max-width:1175px) {
+   .demo {
+      display: none;
+   }
+   
+}
+
+@media screen and (max-width:995px) {
+  .demo {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 5%;
+    
+ }
+   .header{
+      padding-block: 0.8rem;
+   }
+   .header__navigation, .active {
+      display: none;
+   }
+   .hamburger {
+    display: block;
+   }
+   .header__navigations {
+    position: absolute;
+    flex-direction: column;
+    justify-content: start;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    overflow-y: auto;
+    /* max-height: 100px; */
+    height: 80vh;
+    background-color: white;
+    color: #341c48;
+    
+   }
+   .header__navs {
+    justify-content: space-between;
+    padding-inline: 5%;
+    border-bottom: 1px solid gray;
+    font-weight: bold;
+   }
+}
+
+@media screen and (max-width:600px) {
+  .header {
+    padding-block: 1rem;
+  }
+  .header__right > h2, .header__right > button {
+    display: none;
+  }
+  
+}

@@ -1,0 +1,42 @@
+.community {
+   position: absolute;
+   top: 4rem;
+   left: 0;
+   background-color: white;
+   color: #643789;
+   display: flex;
+   /* overflow:scroll !important;
+   border: 1px solid red; */
+ }
+
+ .community > .left {
+   flex: 0.5;
+   padding: 2rem 4%;
+ }
+
+ .community > .right {
+   flex: 0.5;
+   padding: 2rem 4%;
+   background-color: rgba(248, 244, 244, 0.755);
+ }
+
+ .IntegrationDrop__content > .ico {
+   font-size: 1.5rem;
+ }
+
+ .left__container {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+ }
+
+ @media screen and (max-width:930px) {
+  .community {
+    flex-direction: column;
+  }
+ }
+
+ @media screen and (max-width:480px) {
+  .left__container {
+    grid-template-columns: 1fr;
+  }
+ }

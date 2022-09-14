@@ -1,0 +1,46 @@
+.fifthSection {
+   display: flex;
+   flex-direction: column;
+   gap: 1.2rem;
+   text-align: center;
+   padding: 4rem 4%;
+}
+
+.fifthSection > h1 {
+   color: #351D48;
+   font-size: 2.5rem;
+}
+
+.fifthSection > p {
+   color: #444;
+   font-weight: 500;
+}
+
+.fifthSection__button {
+   text-align: center;
+}
+
+.fifthSection__button > button {
+   padding: 1rem 2rem;
+   font-weight: 600;
+   font-size: 1rem;
+   border-radius: 8px;
+   border: none;
+   color: white;
+   background-color: #760FC3;
+}
+
+.fifthSection > p:last-child {
+   color: #760FC3;
+}
+
+.svg {
+   height: 1rem;
+}
+
+@media screen and (max-width:700px) {
+   .fifthSection > h1 {
+      font-size: 2rem;
+   }
+   
+}

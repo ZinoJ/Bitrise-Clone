@@ -1,0 +1,93 @@
+.fourthSection {
+   padding: 6rem 5%;
+   display: flex;
+   gap: 4rem;
+   align-items: center;
+   background: linear-gradient(to left, #eaeaeb, #f7efef)
+}
+.fourthSection > .left {
+flex: 0.5;
+display: flex;
+flex-direction: column;
+gap: 2rem;
+color: #341C48;
+}
+
+.fourthSection > .left > h1 {
+   font-size: 2.6rem;
+   font-weight: bolder;
+}
+
+.fourthSection > .right {
+   flex: 0.5;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 1rem;
+   color: #683DA6;
+
+}
+
+.fourthSection__button > button {
+   padding: 1rem 4rem;
+   border: 2px solid #683DA6;
+   background-color: transparent;
+   color: #683DA6;
+   font-size: 1rem;
+   font-weight: 600;
+   
+}
+
+.fourthSection > .right >.container {
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+   background-color: white;
+   border-radius: 8px;
+   padding: 0.5rem 1rem;
+}
+
+.fourthSection > .right > .container > img {
+   height: 60px;
+   border-radius: 8px;
+}
+
+.fourthSection > .right > .container > h2 {
+   font-size: 1rem;
+}
+
+@media screen and (max-width:990px) {
+   .fourthSection {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+}
+
+@media screen and (max-width:700px) {
+   .fourthSection > .left > h1 {
+      font-size: 2.1rem ;
+      
+   }
+}
+
+@media screen and (max-width:600px) {
+   .fourthSection > .right >.container {
+      gap: 1rem;
+   }
+}
+
+@media screen and (max-width:500px) {
+   .fourthSection > .right >.container {
+      gap: 0.6rem;
+   }
+
+   .fourthSection > .right >.container > h2 {
+      font-size: 0.8rem;
+   }
+
+   .fourthSection > .right {
+      gap: 0.4rem;
+   }
+}
+
+
+
